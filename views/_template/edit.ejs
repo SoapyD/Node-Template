@@ -1,0 +1,13 @@
+
+
+<h1>TEMPLATE EDIT</h1>
+
+<% data.forEach(function (item){ %>
+
+    <% for (const [key, value] of Object.entries(item["_doc"])) { %>
+        <p><%= key %> : <%= value %></p>
+    <% } %>
+
+    <br>    
+
+<% }) %>
