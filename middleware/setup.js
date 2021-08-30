@@ -28,7 +28,7 @@ exports.setupApp = async(app) => {
     app.use(bodyParser.urlencoded({ extended: true })); //setup body parser so it can read url parameters
     app.use(bodyParser.json()); //allow the app to read json input into the body
 
-    app.use(express.static(__dirname + "/public")); //setup a public folder for js and css
+    app.use(express.static(__dirname + "/../public")); //setup a public folder for js and css
     app.use(methodOverride("_method")); //setup means of changing POST methods to DELETE and PUT methods
     app.use(flash()); //setup flash messages  
 
